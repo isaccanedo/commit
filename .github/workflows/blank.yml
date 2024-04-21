@@ -1,0 +1,15 @@
+name: Commits Automáticos
+
+on:
+  schedule:
+    - cron: '0 6,13,18 * * *'
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Executar script de commit
+        run: ./commit.sh
