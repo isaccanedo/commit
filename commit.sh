@@ -3,7 +3,7 @@
 # Obter data e hora atuais
 now=$(date +"%Y-%m-%d %H:%M:%S")
 
-# Gerar mensagem de commit
+# Gerar mensagem de commits
 commit_message="Commit realizado às $now"
 
 # Fazer o commit no arquivo README.md
